@@ -3,15 +3,22 @@
  * Все паршалы подключаются сюда.
  */
 
-// Утиліти
+// Подключение переменных и глобальных стилей
+@import './utils/vars';
+@import './utils/mixins';
 @import './utils/reset';
 @import './utils/global-style';
-@import './utils/vars';
 @import './utils/visually-hidden';
 
-// Стилі компонентів
+// Подключение файлов стилей для переиспользованных элементов
+@import './components/container.scss';
+@import './components/sections.scss';
 
-// Стилі секцій
+// Подключение файлов стилей для основных компонентов страницы
 @import './layout/header';
-
+@import './layout/hero';
+@import './layout/why_us';
+@import './layout/catalog-preview';
+@import './layout/how-we-work';
+@import './layout/reviews';
 @import './layout/footer';
